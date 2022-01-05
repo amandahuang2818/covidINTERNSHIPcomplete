@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="currentnews.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+  
+ <nav class="navbar">
+     <div = "container-icon"> 
+       <a href="index.html"> <img  class="primary-icon" src="long.png">
+       </a>
+     </div>
+     <ul class="nav-list" id="navi-list">
+       <li class="list-item">
+         <a href="index.html">Home</a>
+       </li>
+       <li class="list-item">
+         <a href="currentnews.html">Current News</a>
+       </li>
+       <li class="list-item">
+         <a href="index.html#aboutus">About Us</a>
+       </li>
+      </ul>
+
+     <div class="menu">
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+      <div class="menu-line" id="toggleButton"></div>
+    </div>
+     
+    </nav>
+
+<div class="spacer">
+</div>
+
+<div >
+<h1 class="currentnewsh"> Current News: </h2>
+  <hr class="banner">
+
+<a href="covid.html"> 
+  <img class="bannersize" src="banner.png"> 
+</a>
+
+
+<hr class="banner">
+</div>
+
+<footer>
+  <p> &copy; 2021 by Cause for Concern </p>
+</footer>
+
+<script >
+    const toggleButton = document.getElementById('toggleButton')
+const naviList = document.getElementById ('navi-list')
+toggleButton.addEventListener('click', () => {
+  naviList.classList.toggle('active');
+})
+</script>
+
+  </body>
+</html>
